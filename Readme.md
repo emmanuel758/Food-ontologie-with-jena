@@ -6,7 +6,7 @@
 
 ## INSTALLATION
 
-Dans le dossier LEUNA_20U2698 se trouve 2 fichiers
+Dans le dossier courant se trouve 2 fichiers
 
 - docker-compose.yml qui specifie l'emplacement des images docker pour l'application angular et pour jena (executer jena avec des donnes
   pré - enregistrées est unpeu plus complexe)
@@ -14,7 +14,7 @@ Dans le dossier LEUNA_20U2698 se trouve 2 fichiers
 
 Suivre les etapes suivantes pour lancer les programmes:
 
-- Ouvrir le dossier LEUNA_20U2698 dans le terminal
+- Ouvrir le dossier courant dans le terminal
 - se rassurer que les adresse localhost:3030 et localhost:4200 ne sont pas occupé par d'autre applications
 - saisir docker compose up 
 - Ouvrir le navigateur et aller a l'adresse --localhost:3030-- 
