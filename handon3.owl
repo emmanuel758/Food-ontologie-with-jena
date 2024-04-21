@@ -1,0 +1,1698 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/patricia/ontologies/2024/3/Alimentation-ontology-9/"
+     xml:base="http://www.semanticweb.org/patricia/ontologies/2024/3/Alimentation-ontology-9/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Alimentation-ontology-9="http://www.semanticweb.org/patricia/ontologies/2024/3/Alimentation-ontology-9#"
+     xmlns:Alimentation-ontology-91="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#eatAFood -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#eatAFood">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#eat/drink"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#eatAtPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#eatAtPeriod">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#eat/drink"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Period"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#has_food_component -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#has_food_component">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#FoodComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#has_food_ingredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#has_food_ingredient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#is_from -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#is_from">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#eat/drink -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#eat/drink">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#hasFirstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#hasFirstName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#hasImage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#hasImage">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#hasIngredient -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#hasIngredient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#hasName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#FoodComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#FoodComponent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Period -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Period"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>AIL</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Alex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Alex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>KOM TAGNE</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>ALEX</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Amsterdam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Amsterdam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+        <Alimentation-ontology-91:hasName>AMSTERDAM</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Apres_midi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Apres_midi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Period"/>
+        <Alimentation-ontology-91:hasName>APRES MIDI</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_a_la_Ecuatoguineana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_a_la_Ecuatoguineana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Arroz%20a%20la%20Ecuatoguineana.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Riz préparé dans un bouillon parfumé avec des épices et des herbes locales.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Arroz a la Ecuatoguineana</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Camarones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Camarones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Arroz%20con%20Camarones.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Riz sauté avec des crevettes, des légumes, de l&apos;ail et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Arroz con Camarones</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Espárragos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Espárragos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Arroz%20con%20Esp%C3%A1rragos.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Riz sauté avec des asperges, des oignons et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Arroz con Espárragos</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Frijoles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Frijoles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Arroz%20con%20Frijoles.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Riz servi avec des haricots rouges cuits dans un bouillon parfumé avec des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Arroz con Frijoles</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Gambas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Gambas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Arroz%20con%20Gambas.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Riz sauté avec des crevettes, des légumes, de l&apos;ail et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Arroz con Gambas</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Jitomate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Jitomate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Arroz%20con%20Jitomate.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Riz sauté avec des tomates, des oignons et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Arroz con Jitomate</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Leche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Leche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Arroz%20con%20Leche.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>riz cuit dans du lait sucré avec de la cannelle et des raisins secs.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Arroz con Leche</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Lechuga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Lechuga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Arroz%20con%20Lechuga.png</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Riz sauté avec de la laitue, des légumes et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Arroz con Lechuga</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Pollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Arroz_con_Pollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Arroz%20con%20Pollo.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>riz cuit avec du poulet, des légumes, des épices et parfois des pois.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Arroz con Pollo</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Asopao_de_Pollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Asopao_de_Pollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Asopao%20de%20Pollo%20.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Plat de riz cuit dans un bouillon de poulet avec des légumes, des épices et parfois des pois chiches.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Asopao de Pollo</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Avocat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Avocat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>AVOCAT</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Bernard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Bernard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>ETEME</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>BERNARD</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Bocadillos_de_Platano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Bocadillos_de_Platano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Bocadillos%20de%20Platano.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Tranches de bananes plantains frites, souvent servies comme collation avec une sauce épicée.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Bocadillos de Platano</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Bollo_de_Mandioca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Bollo_de_Mandioca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Bollo%20de%20Mandioca.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Boulettes de manioc mélangées à de la farine de blé, de l&apos;oignon et des épices, puis cuites à la vapeur.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Bollo de Mandioca</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Bollo_de_Maíz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Bollo_de_Maíz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Bollo%20de%20Ma%C3%ADz.png</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>boulettes de maïs mélangées à de la farine de manioc, de l&apos;oignon et des épices, puis cuites à la vapeur.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Bollo de Maí</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Bollo_de_Pescado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Bollo_de_Pescado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Bollo%20de%20Pescado.png</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>boulettes de poisson mélangées à de la farine de manioc, de l&apos;oignon et des épices, puis cuites à la vapeur.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Bollo de Pescado</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Bollo_de_Yuca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Bollo_de_Yuca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Bollo%20de%20Yuca.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Boulettes de manioc mélangées à de la farine de blé, de l&apos;oignon et des épices, puis cuites à la vapeur.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Bollo de Yuca</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Brice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Brice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>FONKOU</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>BRICE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Cafe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Cafe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+        <Alimentation-ontology-91:hasName>CAFE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Caldo_de_Pescado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Caldo_de_Pescado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Caldo%20de%20Pescado.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Bouillon de poisson préparé avec du poisson frais, des légumes et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Caldo de Pescado</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Camarones_al_Ajillo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Camarones_al_Ajillo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Camarones%20al%20Ajillo.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Crevettes sautées à l&apos;ail avec du piment et du persil, souvent servies comme entrée.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Camarones al Ajillo</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Cameroun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Cameroun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#country"/>
+        <Alimentation-ontology-91:hasName>CAMEROUN</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Carne_Asada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Carne_Asada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Carne%20Asada.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Viande grillée ou rôtie assaisonnée avec des épices et des herbes.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Carne Asada</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Carne_Guisada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Carne_Guisada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Carne%20Guisada.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Viande mijotée dans une sauce épaisse avec des légumes et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Carne Guisada</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Carne_a_la_Parrilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Carne_a_la_Parrilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Carne%20a%20la%20Parrilla.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Viande grillée ou rôtie servie avec des accompagnements tels que du riz, des haricots ou des légumes.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Carne a la Parrilla</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Cazuela_de_Mariscos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Cazuela_de_Mariscos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Cazuela%20de%20Mariscos.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Casserole de fruits de mer préparée avec du poisson, des crevettes, des moules et des légumes dans une sauce épaisse.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Cazuela de Mariscos</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ceviche_de_Pescado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ceviche_de_Pescado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Ceviche%20de%20Pescado.png</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Poisson cru mariné dans du jus de citron avec des oignons, des tomates, des piments et des herbes fraîches.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Ceviche de Pescado</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Champagne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Champagne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasName>CHAMPAGNE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Chantal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Chantal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>DJEUFACK</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>CHANTAL</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Chantou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Chantou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>BAKEM</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>CHANTOU</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Choripan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Choripan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Choripan.jpeg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Sandwich de saucisse grillée servi sur un petit pain avec des condiments et des sauces.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Choripan</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Chuletas_de_Cerdo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Chuletas_de_Cerdo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Chuletas%20de%20Cerdo.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Côtelettes de porc grillées ou rôties assaisonnées avec des épices et des herbes.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Chuletas de Cerdo</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Chuletas_de_Cordero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Chuletas_de_Cordero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Chuletas%20de%20Cordero.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Côtelettes d&apos;agneau grillées ou rôties assaisonnées avec des épices et des herbes.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Chuletas de Cordero</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Cloe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Cloe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasName>DAN CLOE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Congo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Congo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#country"/>
+        <Alimentation-ontology-91:hasName>CONGO</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Crevette -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Crevette">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>CREVETTES</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>CHEDJOUN</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>DAVE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#David -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#David">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>BILOA</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>DAVID</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Donald -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Donald">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>FOE</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>DONALD</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Eau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Eau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+        <Alimentation-ontology-91:hasName>EAU</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Elvino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Elvino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+        <Alimentation-ontology-91:hasName>ELVINO</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Emmanuel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Emmanuel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>LEUNA</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>EMMANUEL</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Empanadas_de_Carne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Empanadas_de_Carne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Empanadas%20de%20Carne.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Petits chaussons farcis de viande hachée, d&apos;oignons et d&apos;épices, puis frits jusqu&apos;à ce qu&apos;ils soient dorés.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Empanadas de Carne</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Empanadas_de_Queso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Empanadas_de_Queso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Empanadas%20de%20Queso.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Petits chaussons farcis de fromage et d&apos;épices, puis frits jusqu&apos;à ce qu&apos;ils soient dorés.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Empanadas de Queso</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Encebollado_de_Pescado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Encebollado_de_Pescado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Encebollado%20de%20Pescado.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Poisson cuit dans une sauce à base d&apos;oignons, de tomates et de poivrons.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Encebollado de Pescado</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_Mixta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_Mixta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Ensalada%20Mixta.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Salade mélangée préparée avec des légumes frais, des herbes et une vinaigrette maison.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Ensalada Mixta</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_de_Aguacate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_de_Aguacate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Ensalada%20de%20Aguacate.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Salade d&apos;avocat préparée avec de l&apos;avocat frais, des tomates, des oignons, du citron et des herbes.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Ensalada de Aguacate</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_de_Frutas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_de_Frutas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Ensalada%20de%20Frutas.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Salade de fruits frais coupés en dés et mélangés avec un sirop léger.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Ensalada de Frutas</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_de_Papa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_de_Papa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Ensalada%20de%20Papa.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Salade de pommes de terre préparée avec des pommes de terre cuites, des œufs durs, des oignons et de la mayonnaise.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Ensalada de Papa</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_de_Pollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_de_Pollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Ensalada%20de%20Pollo%20.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Salade de poulet préparée avec du poulet cuit, des légumes frais et une vinaigrette maison.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Ensalada de Pollo</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_de_Repollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_de_Repollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Ensalada%20de%20Repollo.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Salade de chou préparée avec du chou râpé, des carottes, des oignons et une vinaigrette légère.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Ensalada de Repollo</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_de_Tomate_y_Cebolla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ensalada_de_Tomate_y_Cebolla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Ensalada%20de%20Tomate%20y%20Cebolla.jpeg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Salade de tomates et d&apos;oignons frais assaisonnée avec du sel, du poivre et de l&apos;huile d&apos;olive.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Ensalada de Tomate y Cebolla</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Espaguetis_a_la_Bolognesa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Espaguetis_a_la_Bolognesa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Espaguetis%20a%20la%20Bolognesa.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Spaghettis servis avec une sauce à la viande à base de bœuf haché, de tomates et d&apos;herbes.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Espaguetis a la Bolognesa</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Eva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Eva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>KAMDA</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>EVA</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Farine_de_manioc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Farine_de_manioc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>FARINE DE MANIOC</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Flan_de_Leche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Flan_de_Leche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Flan%20de%20Leche.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Flan à la vanille préparé avec du lait, des œufs, du sucre et de la vanille.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Flan de Leche</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Fritada_de_Plátano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Fritada_de_Plátano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Fritada%20de%20Pl%C3%A1tano.jpeg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Bananes plantains frites et écrasées, souvent servies en accompagnement de viande ou de poisson.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Fritada de Plátano</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Fufu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Fufu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Fufu.jpeg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>pâte à base de farine de manioc ou de banane plantain, servie avec une sauce épicée et des accompagnements comme du poisson, de la viande ou des légumes.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Fufu</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Fufu_de_Plátano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Fufu_de_Plátano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Fufu%20de%20Pl%C3%A1tano.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Pâte de banane plantain servie avec une sauce épicée.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Fufu de Plátano</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Gabon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Gabon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#country"/>
+        <Alimentation-ontology-91:hasName>GABON</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Gambas_al_Ajillo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Gambas_al_Ajillo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Gambas%20al%20Ajillo.jpeg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Crevettes sautées à l&apos;ail avec du piment et du persil, servies avec du pain grillé.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Gambas al Ajillo</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Glucide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Glucide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#FoodComponent"/>
+        <Alimentation-ontology-91:hasName>GLUCIDE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#country"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasName>GUINEE EQUATORIALE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Haricot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Haricot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>HARICOT</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Huile_de_palme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Huile_de_palme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>HUILE DE PALME</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Junior -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Junior">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>FANKAM</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>JUNIOR</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Jus_de_goyave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Jus_de_goyave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+        <Alimentation-ontology-91:hasName>JUS DE GOYAVE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Lait_de_coco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Lait_de_coco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>LAIT DE COCO</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Legume -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Legume">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>LEGUME</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Lipide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Lipide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#FoodComponent"/>
+        <Alimentation-ontology-91:hasName>LIPIDE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Loic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Loic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>NJIOSSEU</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>CHARLES LOIC</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Lomo_Saltado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Lomo_Saltado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Lomo%20Saltado%20.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Sauté de bœuf mariné avec des tomates, des oignons et des poivrons, servi avec du riz.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Lomo Saltado</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Maeva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Maeva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>CHENO</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>MAEVA</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Makemba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Makemba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Makemba.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Plat à base de bananes plantains vertes cuites dans de l&apos;huile de palme, souvent accompagnées de poissons ou de viandes en sauce.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Makemba</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Mangue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Mangue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>MANGUE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Manyan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Manyan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+        <Alimentation-ontology-91:hasName>MANYAN</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Mariscada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Mariscada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Mariscada.png</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Mélange de fruits de mer cuits dans une sauce à base de tomates, d&apos;oignons et de poivrons.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Mariscada</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Matin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Matin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Period"/>
+        <Alimentation-ontology-91:hasName>MATIN</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Maïs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Maïs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>MAÏS</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Milanesa_de_Pollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Milanesa_de_Pollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Milanesa%20de%20Pollo.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Escalopes de poulet panés et frits, servis avec des quartiers de citron.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Milanesa de pollo</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Mineraux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Mineraux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#FoodComponent"/>
+        <Alimentation-ontology-91:hasName>MINERAUX</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Mozambique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Mozambique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#country"/>
+        <Alimentation-ontology-91:hasName>MOZAMBIQUE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Niger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Niger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#country"/>
+        <Alimentation-ontology-91:hasName>NIGER</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Oignons -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Oignons">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>OIGNONS</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Origin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Origin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+        <Alimentation-ontology-91:hasName>ORIGIN</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Paella_de_Mariscos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Paella_de_Mariscos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Paella%20de%20Mariscos.jpeg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Paella aux fruits de mer préparée avec du riz, du poisson, des crevettes, des moules et des légumes.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Paella de mariscos</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pastel_de_Carne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pastel_de_Carne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Pastel%20de%20Carne.png</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Tourte à la viande hachée, aux légumes et aux épices, enveloppée dans une pâte et cuite au four.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Pastel de carne</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pastel_de_Pescado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pastel_de_Pescado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Pastel%20de%20Pescado.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Gâteau de poisson préparé avec du poisson haché, des œufs, de la farine de maïs et des épices, puis cuit au four.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Pastel de pescado</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Patricia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Patricia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>NEGOUE MAFO</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>PATRICIA</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Patrick -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Patrick">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>FOTSOP</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>PATRICK</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pescado_a_la_Plancha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pescado_a_la_Plancha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Pescado%20a%20la%20Plancha.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Poisson grillé ou cuit à la plancha, souvent assaisonné avec du citron, de l&apos;ail et des herbes.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Pescado a la plancha</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pescado_al_Horno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pescado_al_Horno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Pescado%20al%20Horno.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Poisson cuit au four avec des légumes, des herbes, du citron et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Pescado al horno</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pescado_al_Vapor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pescado_al_Vapor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Pescado%20al%20Vapor.png</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Poisson cuit à la vapeur avec des légumes, des herbes et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Pescado al vapor</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pinchos_de_Pollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pinchos_de_Pollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Pinchos%20de%20Pollo.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Brochettes de poulet grillées marinées dans une sauce à base de citron, d&apos;ail et d&apos;herbes.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Pinchos de pollo</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Plantain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Plantain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>PLANTAIN</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Plátanos_Asados -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Plátanos_Asados">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Pl%C3%A1tanos%20Asados.png</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Bananes plantains cuites au four ou grillées, souvent servies en accompagnement.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Plátanos Asados</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Poisson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Poisson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>POISSON</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pollo_Asado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pollo_Asado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Pollo%20Asado.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>: Poulet grillé ou rôti assaisonné avec des épices et des herbes.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Pollo asado</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pollo_al_Horno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Pollo_al_Horno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Pollo%20al%20Horno.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Poulet cuit au four avec des légumes, des herbes et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Pollo al horno</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Poulet_grillé -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Poulet_grillé">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>POULET GRILLÉ</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Proteine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Proteine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#FoodComponent"/>
+        <Alimentation-ontology-91:hasName>PROTEINE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Riz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Riz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>RIZ</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Rodrigue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Rodrigue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>KAMGA</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>RODRIGUE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Salsa_de_Cacahuètes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Salsa_de_Cacahuètes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Salsa%20de%20Cacahu%C3%A8tes.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Sauce aux arachides préparée avec des arachides moulues, de l&apos;huile de palme, des tomates, des oignons, de l&apos;ail et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Salsa de Cacahuètes</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Salsa_de_Mangue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Salsa_de_Mangue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Salsa%20de%20Mangue.png</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Sauce à base de mangue préparée avec de la mangue fraîche, des oignons, du piment, du citron et des épices et parfois de la tomate.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Salsa de mangue</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Salsa_de_Tomate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Salsa_de_Tomate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Salsa%20de%20Tomate.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Sauce tomate préparée avec des tomates fraîches, de l&apos;oignon, de l&apos;ail, des herbes et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Salsa de tomate</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Samantha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Samantha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>EVOUNA</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>ADELE SAMANTHA</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sarah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sarah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>MAFOKAM</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>LAURETTE SARAH</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Soiree -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Soiree">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Period"/>
+        <Alimentation-ontology-91:hasName>SOIREE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sonia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sonia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>KOUGOUM</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>SONIA</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Almejas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Almejas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Sopa%20de%20Almejas.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>soupe de palourdes préparée avec des palourdes fraîches, des légumes, des épices et du lait de coco.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Sopa de almejas</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Camarones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Camarones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Sopa%20de%20Camarones.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>soupe de crevettes préparée avec des légumes, des épices et du lait de coco.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Sopa de camarones</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Cangrejo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Cangrejo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Sopa%20de%20Cangrejo.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>soupe de crabe préparée avec du crabe frais, des légumes et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Sopa de cangrejo</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Frijoles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Frijoles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Sopa%20de%20Frijoles.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>soupe de haricots préparée avec des légumes, des épices et de la viande.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Sopa de frijoles</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Langosta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Langosta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Sopa%20de%20Langosta.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>soupe de langouste préparée avec de la langouste fraîche, des légumes et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Sopa de langosta</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Ndolé -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Ndolé">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/blob/main/TSOTSAImg_dataset/Equatorial%20Guinea/Sopa%20de%20Ndol%C3%A9.png</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasName>Sopa de Ndolé</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Pescado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Pescado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Sopa%20de%20Pescado.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>soupe de poisson préparée avec du poisson frais, des légumes, des épices et parfois du lait de coco.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Sopa de pescado</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Pescado_y_Camarones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Pescado_y_Camarones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Sopa%20de%20Pescado%20y%20Camarones.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>soupe de poisson et de crevettes préparée avec des légumes, des épices et du lait de coco.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Sopa de Pescado y Camarones</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Verduras -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Verduras">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Sopa%20de%20Verduras.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>soupe de légumes préparée avec divers légumes locaux, des herbes et des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Sopa de verduras</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Verduras_y_Carne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Sopa_de_Verduras_y_Carne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Sopa%20de%20Verduras%20y%20Carne.jpeg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>soupe de légumes avec de la viande, cuite dans un bouillon parfumé avec des épices.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Sopa de verduras y carne</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Stephane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Stephane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Person"/>
+        <Alimentation-ontology-91:hasFirstName>MBOU</Alimentation-ontology-91:hasFirstName>
+        <Alimentation-ontology-91:hasName>STEPHANE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Tacos_de_Pescado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Tacos_de_Pescado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Tacos%20de%20Pescado.jpeg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Tacos de poisson frits ou grillés garnis de légumes frais et de sauce.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Tacos de pescado</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Tarta_de_Queso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Tarta_de_Queso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Tarta%20de%20Queso.jpg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Tarte au fromage préparée avec un mélange de fromage, d&apos;œufs, de sucre et de vanille sur une croûte de biscuit émiettée.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Tarta de queso</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Togo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Togo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#country"/>
+        <Alimentation-ontology-91:hasName>TOGO</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Tomate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Tomate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>TOMATE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Tortilla_Española -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Tortilla_Española">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Dish"/>
+        <Alimentation-ontology-91:is_from rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Guinee_equatoriale"/>
+        <Alimentation-ontology-91:hasImage>https://raw.githubusercontent.com/jiofidelus/tsotsa/main/TSOTSAImg_dataset/Equatorial%20Guinea/Tortilla%20Espa%C3%B1ola.jpeg</Alimentation-ontology-91:hasImage>
+        <Alimentation-ontology-91:hasIngredient>Omelette espagnole aux pommes de terre, aux oignons et aux œufs, souvent servie en entrée ou en plat principal.</Alimentation-ontology-91:hasIngredient>
+        <Alimentation-ontology-91:hasName>Tortilla Española</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Viande -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Viande">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>VIANDE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Vitamine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Vitamine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#FoodComponent"/>
+        <Alimentation-ontology-91:hasName>VITAMINE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Whisky -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Whisky">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+        <Alimentation-ontology-91:hasName>WHISKY</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#chapman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#chapman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+        <Alimentation-ontology-91:hasName>CHAPMAN</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#citron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#citron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>CITRON</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#feuille_de_ndolè -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#feuille_de_ndolè">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>FARINE DE NDOLÈ</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#sauce_Arachide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#sauce_Arachide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>SAUCE ARACHIDE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Épice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Épice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Ingredient"/>
+        <Alimentation-ontology-91:hasName>ÉPICE</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#33 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#33">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emmanuel/ontologies/2024/3/Alimentation-ontology-9#Drink"/>
+        <Alimentation-ontology-91:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</Alimentation-ontology-91:hasName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
